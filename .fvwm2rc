@@ -26,7 +26,7 @@ AddToFunc WindowListFunc
 #----------------------------------------------------------------------
 
 # アイコンファイルの保存先
-ImagePath /home/pcuser/icons
+ImagePath $HOME/icons
 
 # 仮想デスクトップを使用しない
 DeskTopSize 1x1
