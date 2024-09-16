@@ -61,7 +61,7 @@ Style *        Icon programs.png
 OpaqueMoveSize unlimited
 
 # ウインドウが画面をはみ出さないように調整する
-Style * MaxWindowize 100 100
+Style * MaxWindowSize 100 100
 
 #----------------------------------------------------------------------
 # 3: カラーセット
