@@ -14,6 +14,13 @@ AddToFunc   Func-Maximize
 + I Iconify off
 + I Maximize
 
+# ウィンドウリスト表示時に、マウスカーソルが移動するのを防止する
+DestroyFunc WindowListFunc
+AddToFunc WindowListFunc
++ I Iconify off
++ I Focus
++ I Raise
+
 #----------------------------------------------------------------------
 # 2: スタイル
 #----------------------------------------------------------------------
@@ -46,9 +53,15 @@ Style * IconBox 1 -1 -1 -1
 Style * Colorset 1, HilightColorset 2
 
 # 各アプリケーションごとの設定
-Style "xclock" NoTitle, borderWidth 0, HandleWidth 0
+Style "xclock" NoTitle, borderWidth 0, HandleWidth 0, WindowListSkip
 Style "mlterm" Icon xterm-sol.png
 Style *        Icon programs.png
+
+# ドラッグ中にウィンドウの内容を表示する
+OpaqueMoveSize unlimited
+
+# ウインドウが画面をはみ出さないように調整する
+Style * MaxWindowize 100 100
 
 #----------------------------------------------------------------------
 # 3: カラーセット
@@ -214,7 +227,7 @@ Style "QuitVerify" NoTitle, NoHandles, BorderWidth 5
 #AddToFunc InitFunction    "I" Module FvwmButtons
 #AddToFunc RestartFunction "I" Module FvwmButtons
 
-#Style "FvwmButtons" NoTitle, BorderWidth 0, HandleWidth 0
+#Style "FvwmButtons" NoTitle, BorderWidth 0, HandleWidth 0, WindowListSkip, NeverFocus
 
 #*FvwmButtonsBack           #cecece
 #*FvwmButtonsButtonGeometry 64x64+555-0
