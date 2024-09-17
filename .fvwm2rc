@@ -59,6 +59,7 @@ Style *        Icon programs.png
 
 # ドラッグ中にウィンドウの内容を表示する
 OpaqueMoveSize unlimited
+Style * ResizeOpaque
 
 # ウインドウが画面をはみ出さないように調整する
 Style * MaxWindowSize 100 100
