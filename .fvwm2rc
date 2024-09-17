@@ -231,10 +231,11 @@ Style "QuitVerify" NoTitle, NoHandles, BorderWidth 5
 #Style "FvwmButtons" NoTitle, BorderWidth 0, HandleWidth 0, WindowListSkip, NeverFocus
 
 #*FvwmButtonsBack           #cecece
-#*FvwmButtonsButtonGeometry 64x64+555-0
+#*FvwmButtonsButtonGeometry 64x64+589-0
 #*FvwmButtonsRows           1
 
 #*FvwmButtons ""  firefox.png   Exec firefox
+#*FvwmButtons ""  chrome.png    Exec chrome
 #*FvwmButtons ""  xterm-sol.png Exec mlterm -geometry 132x24 -title="端末エミュレータ"
 
 #*FvwmButtons(Swallow "xload" 'Exec xload -update 3 -nolabel -bg \\#cecece', Action(Mouse 1) 'Exec xterm -e top')
