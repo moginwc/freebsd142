@@ -64,7 +64,7 @@ cp /usr/local/lib/firefox/browser/chrome/icons/default/default48.png ~/icons/fir
 sudo pkg install -y xload
 sudo pkg install -y xbatt
 
-sudo pkg install -y samba416
+sudo pkg install -y samba419
 sudo service samba_server enable
 mkdir ~/share
 sudo cp etc_smb4.conf /usr/local/etc/smb4.conf
