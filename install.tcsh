@@ -47,7 +47,7 @@ sudo pkg update -f
 sudo pkg upgrade
 
 mkdir ~/.anthy
-#touch ~/.anthy/private_words_default
+# touch ~/.anthy/private_words_default
 cp -r ./.anthy ~
 
 sudo mv /etc/motd.template /etc/motd.template.old
