@@ -60,6 +60,9 @@ cp /usr/local/lib/firefox/browser/chrome/icons/default/default48.png ~/icons/fir
 sudo pkg install -y xload
 sudo pkg install -y xbatt
 
+mkdir ~/.anthy
+cp -r ./.anthy ~
+
 sudo pkg install -y samba416
 sudo service samba_server enable
 mkdir ~/share
