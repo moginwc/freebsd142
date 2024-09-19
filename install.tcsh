@@ -43,6 +43,9 @@ sudo pkg install -y xlockmore
 sudo pkg install -y lupe
 sudo pkg install -y xpad3
 
+mkdir ~/.config/
+cp -r ./config/ ~
+
 sudo pkg update -f
 sudo pkg upgrade
 
