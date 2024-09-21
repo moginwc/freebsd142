@@ -61,6 +61,7 @@ sudo service powerd enable
 sudo pkg install -y chromium
 
 cp /usr/local/lib/firefox/browser/chrome/icons/default/default48.png ~/icons/firefox.png
+cp /usr/local/share/icons/hicolor/48x48/apps/chrome.png ~/icons/chrome.png
 sudo pkg install -y xload
 sudo pkg install -y xbatt
 
