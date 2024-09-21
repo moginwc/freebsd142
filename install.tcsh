@@ -83,6 +83,7 @@ sudo pkg install -y xload
 sudo pkg install -y xbatt
 
 # conky設定
+pkg install -y conky
 cp ./.conkyrc ~
 
 # 7-3. Windowsやmacとファイル共有したい（smb）
