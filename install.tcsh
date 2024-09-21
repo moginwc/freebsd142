@@ -62,7 +62,7 @@ sudo pkg install -y lupe
 sudo pkg install -y xpad3
 
 # xpadの初期設定
-cp -r ./.config/ ~
+cp -r ./.config ~
 
 # パッケージのアップデート
 sudo pkg update -f
