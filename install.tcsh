@@ -43,7 +43,7 @@ sudo pkg install -y mlterm
 cp -r ./.mlterm ~
 
 # 入力メソッド・日本語入力システムのインストールと設定
-sudo pkg install -y ja-uim-anthy uim-gtk3 uim-qt5
+sudo pkg install -y ja-uim-anthy uim-gtk uim-gtk3 uim-qt5
 cp -r ./.xkb ~
 
 # 入力メソッド・日本語入力システムの初期設定
