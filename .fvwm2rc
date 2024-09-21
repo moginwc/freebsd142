@@ -178,9 +178,9 @@ Mouse 3 I A Menu Window-Ops2 Nop
 key F4 A M Close
 
 # スクリーンショット(PrtSc全画面, ALT+PrtSCウインドウ, CTRL+PrtSCウインドウ内部)
-#Key Print A A Exec scrot –f 'screenshot%Y%m%d%H%M%S.png'
-#Key Print A M Exec scrot –b –u –f 'screenshot%Y%m%d%H%M%S.png'
-#Key Print A C Exec scrot –u –f 'screenshot%Y%m%d%H%M%S.png'
+#Key Print A A Exec scrot -f 'screenshot%Y%m%d%H%M%S.png'
+#Key Print A M Exec scrot -b -u -f 'screenshot%Y%m%d%H%M%S.png'
+#Key Print A C Exec scrot -u -f 'screenshot%Y%m%d%H%M%S.png'
 
 #----------------------------------------------------------------------
 # 6: ウインドウの装飾
