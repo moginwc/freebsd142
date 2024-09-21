@@ -18,7 +18,7 @@ https://moginwc.sakura.ne.jp/FreeBSD142InstallGuide.pdf
 ステップ９．インテル内蔵GPUの場合は下記のコマンドを実行する。
            sudo echo 'kld_list="i915kms.ko"' | sudo tee -a /etc/rc.conf
 ステップ１０．% sudo shutdown -r now
-ステップ１１．121ページ以降を参照。
+ステップ１１．125ージ以降を参照。
 
 --------
 
