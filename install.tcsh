@@ -85,6 +85,9 @@ sudo pkg install -y xbatt
 pkg install -y conky
 cp ./.conkyrc ~
 
+# 文字コード表
+cp -r ./html ~
+
 # 7-3. Windowsやmacとファイル共有したい（smb）
 sudo pkg install -y samba419
 sudo service samba_server enable
