@@ -37,7 +37,7 @@ Style * ClickToFocus, MouseFocusClickRaises
 # ウインドウタイトルなどのフォント
 DefaultFont "xft:Sans:size=12"
 
-# RDP接続の際にウインドウ選択ができなくなるのを防止する
+# RDP接続の際にウインドウが選択できなくなるのを防止する
 IgnoreModifiers L25
 
 # ウインドウ枠の幅
@@ -61,8 +61,11 @@ Style *        Icon programs.png
 OpaqueMoveSize unlimited
 Style * ResizeOpaque
 
-# ウインドウが画面をはみ出さないように調整する
+# ウインドウが画面からはみ出さないように調整する
 Style * MaxWindowSize 100 100
+
+# wineにおいて、ダイアログボックス表示後に元の画面にフォーカスが戻らないのを防止する
+#Style * Lenience
 
 #----------------------------------------------------------------------
 # 3: カラーセット
