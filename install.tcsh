@@ -29,7 +29,7 @@ mkdir ~/icons
 cp /usr/local/share/fvwm/pixmaps/programs.xpm ~/icons
 cp /usr/local/share/fvwm/pixmaps/xterm-sol.xpm ~/icons
 sudo pkg install -y ImageMagick7
-magick ~/icons/programs.xpm ~/icons/programs.png
+magick ~/icons/programs.xpm -trim +repage -scale 200% ~/icons/programs.png
 magick ~/icons/xterm-sol.xpm ~/icons/xterm-sol.png
 sudo pkg install -y fvwm3
 sudo pkg install -y ja-font-ipa
