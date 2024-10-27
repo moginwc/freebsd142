@@ -9,3 +9,4 @@ blink_cursor = true
 word_separators = " ="
 logsize = 1024
 use_combining = false
+static_backscroll_mode = true
