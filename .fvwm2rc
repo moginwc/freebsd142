@@ -121,6 +121,8 @@ AddToMenu Programs    "プログラム"                      Title
 +                     "付箋..."                         Exec xpad -s
 +                     ""                                Nop
 +                     "ウェブブラウザ..."               Exec firefox
+#+                     "ウェブブラウザ Firefox..."       Exec firefox
+#+                     "ウェブブラウザ Chromium..."      Exec chrome
 
 AddToMenu Utilities   "ユーティリティ"                  Title
 +                     "再表示"                          Refresh
