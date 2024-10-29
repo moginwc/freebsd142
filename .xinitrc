@@ -7,6 +7,7 @@ export GTK_IM_MODULE=uim
 export QT_IM_MODULE=uim
 export XMODIFIERS=@im=uim
 export XIM=uim
+#/usr/local/bin/mozc start
 uim-xim &
 uim-toolbar-gtk3 -1-1 &
 
