@@ -18,9 +18,9 @@
             "url": "https://www.google.com/maps/"
          }, {
             "id": "8",
-            "name": "Wikipedia",
+            "name": "ChatGPT",
             "type": "url",
-            "url": "https://ja.wikipedia.org/wiki/"
+            "url": "https://chatgpt.com"
          }, {
             "id": "9",
             "name": "DeepL翻訳",
