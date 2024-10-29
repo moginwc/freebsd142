@@ -47,7 +47,8 @@ sudo pkg install -y ja-uim-anthy uim-gtk uim-gtk3 uim-qt5
 cp -r ./.xkb ~
 
 # 入力メソッド・日本語入力システムの初期設定
-cp -r ./.uim.d ~
+cp -r ./.uim.d-anthy ~
+mv ./.uim.d-anthy ./.uim.d
 
 # ユーザー辞書ファイルの作成
 mkdir ~/.anthy
