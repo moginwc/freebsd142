@@ -89,6 +89,9 @@ cp ./.conkyrc ~
 # 文字コード表
 cp -r ./html ~
 
+# クリップボード
+sudo pkg install -y autocutsel
+
 # 7-3. Windowsやmacとファイル共有したい（smb）
 sudo pkg install -y samba419
 sudo service samba_server enable
