@@ -48,7 +48,7 @@ cp -r ./.xkb ~
 
 # 入力メソッド・日本語入力システムの初期設定
 cp -r ./.uim.d-anthy ~
-mv ./.uim.d-anthy ./.uim.d
+mv ~/.uim.d-anthy ~/.uim.d
 
 # ユーザー辞書ファイルの作成
 mkdir ~/.anthy
