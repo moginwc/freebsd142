@@ -83,7 +83,7 @@ sudo pkg install -y xload
 sudo pkg install -y xbatt
 
 # conky設定
-pkg install -y conky
+sudo pkg install -y conky
 cp ./.conkyrc ~
 
 # 文字コード表
