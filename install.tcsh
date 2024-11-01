@@ -9,7 +9,7 @@ sudo service powerd enable
 
 # グラフィックドライバーのインストール
 sudo pkg install -y drm-kmod
-sudo echo 'kld_list="i915kms.ko"' | sudo tee -a /etc/rc.conf
+sudo sysrc kld_list+=i915kms
 sudo pw groupmod video -m pcuser
 
 # vimエディターをインストールする
