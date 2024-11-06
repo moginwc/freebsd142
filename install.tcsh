@@ -102,6 +102,7 @@ else
 endif
 
 # mozc
+cp -r ./.uim.d-mozc/customs/custom-mozc.scm ~/uim.d/customs/
 mkdir ~/.mozc
 xxd -r -p ./.mozc/config1.db > ~/.mozc/config1.db
 
