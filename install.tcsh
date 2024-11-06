@@ -92,6 +92,15 @@ cp -r ./html ~
 # クリップボード
 sudo pkg install -y -q autocutsel
 
+# 起動時のメッセージをできるだけ表示させない
+sudo cp ./root_boot.config /boot.config
+grep '^autoboot_delay=' /boot/loader.conf > /dev/null
+if ( $status == 0 ) then
+    sudo sed -i '' 's/^autoboot_delay=.*/autoboot_delay="-1"/' /boot/loader.conf
+else
+    echo 'autoboot_delay="-1"' | sudo tee -a /boot/loader.conf
+endif
+
 # 7-3. Windowsやmacとファイル共有したい（smb）
 sudo pkg install -y -q samba419
 sudo service samba_server enable
