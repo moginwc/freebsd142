@@ -116,9 +116,13 @@ AddToMenu Programs    "プログラム"                      Title
 +                     "電卓..."                         Exec xcalc
 +                     "パフォーマンスメータ..."         Exec conky
 +                     ""                                Nop
-+                     "スクリーンショット..."           Exec scrot -s -b 'screenshot%Y%m%d%H%M%S.png'
++                     "スクリーンショット..."           Exec scrot -s -b $HOME/screenshot%Y%m%d%H%M%S.png
 +                     ""                                Nop
 +                     "付箋..."                         Exec xpad -s
+#+                     ""                                Nop
+#+                     "リモートデスクトップ接続..."     Exec xfreerdp /u:username /p:password /size:800x600 /sound /clipboard /cert-ignore /v:192.168.1.16
+#+                     "Telnet (シフトJIS接続)..."       Exec mlterm --km=Shift_JIS -title=Telnet\ \(シフトJIS接続\) -e telnet
+
 +                     ""                                Nop
 +                     "ウェブブラウザ..."               Exec firefox
 #+                     "ウェブブラウザ Firefox..."       Exec firefox
@@ -132,6 +136,7 @@ AddToMenu Utilities   "ユーティリティ"                  Title
 +                     "文字コード表..."                 Exec firefox $HOME/html/cp932map.html
 +                     "入力メソッドの設定..."           Exec uim-pref-gtk3
 +                     "日本語入力システム設定..."       Exec uim-pref-gtk3
+#+                     "日本語入力システム設定..."       Exec mozc_tool config_dialog
 
 AddToMenu Window-Ops  "移動"                            Move
 +                     "サイズ変更"                      Resize
