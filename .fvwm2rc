@@ -135,7 +135,7 @@ AddToMenu Utilities   "ユーティリティ"                  Title
 +                     "文字コード表..."                 Exec firefox $HOME/html/cp932map.html
 +                     "入力メソッドの設定..."           Exec uim-pref-gtk3
 +                     "日本語入力システム設定..."       Exec uim-pref-gtk3
-#+                     "日本語入力システム設定..."       Exec mozc_tool config_dialog
+#+                     "日本語入力システム設定..."       Exec env QT_IM_MODULE= mozc_tool config_dialog
 
 AddToMenu Window-Ops  "移動"                            Move
 +                     "サイズ変更"                      Resize
