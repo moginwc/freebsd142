@@ -16,6 +16,11 @@ alias ll	'ls -la | more -e'
 alias vi	vim
 alias rm	'rm -i'
 
+# wineサンプル
+#alias bz       'wine ~/.wine/drive_c/Program\ Files\ \(x86\)/BzEditor/Bz64.exe'
+#alias hidemaru 'wine ~/.wine/drive_c/Program\ Files/Hidemaru/Hidemaru.exe'
+#alias winmerge 'wine ~/.wine/drive_c/Program\ Files/WinMerge/WinMergeU.exe'
+
 # These are normally set through /etc/login.conf.  You may override them here
 # if wanted.
 set path = (/sbin /bin /usr/sbin /usr/bin /usr/local/sbin /usr/local/bin $HOME/bin)
