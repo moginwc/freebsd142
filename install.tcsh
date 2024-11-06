@@ -101,6 +101,10 @@ else
     echo 'autoboot_delay="-1"' | sudo tee -a /boot/loader.conf
 endif
 
+# mozc
+mkdir ~/.mozc
+xxd -r -p ./.mozc/config1.db > ~/.mozc/config1.db
+
 # 7-3. Windowsやmacとファイル共有したい（smb）
 sudo pkg install -y -q samba419
 sudo service samba_server enable
