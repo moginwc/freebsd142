@@ -8,12 +8,12 @@ sudo cp ./etc_ntp_conf /etc/ntp.conf
 sudo service powerd enable
 
 # グラフィックドライバーのインストール
-sudo pkg install -y drm-kmod
+sudo pkg install -y -q drm-kmod
 sudo sysrc kld_list+=i915kms
 sudo pw groupmod video -m pcuser
 
 # vimエディターをインストールする
-sudo pkg install -y vim
+sudo pkg install -y -q vim
 cp ./.vimrc ~
 
 # シェルスクリプト初期設定
@@ -21,29 +21,29 @@ cp ./.cshrc ~
 cp ./.login ~
 
 # X-Window System をインストールする
-sudo pkg install -y xorg
+sudo pkg install -y -q xorg
 
 # ウィンドウシステムをインストールする
-sudo pkg install -y fvwm
+sudo pkg install -y -q fvwm
 mkdir ~/icons
 cp /usr/local/share/fvwm/pixmaps/programs.xpm ~/icons
 cp /usr/local/share/fvwm/pixmaps/xterm-sol.xpm ~/icons
-sudo pkg install -y ImageMagick7
+sudo pkg install -y -q ImageMagick7
 magick ~/icons/programs.xpm -trim +repage -scale 200% ~/icons/programs.png
 magick ~/icons/xterm-sol.xpm ~/icons/xterm-sol.png
-sudo pkg install -y fvwm3
-sudo pkg install -y ja-font-ipa
+sudo pkg install -y -q fvwm3
+sudo pkg install -y -q ja-font-ipa
 
 # ウィンドウシステムの初期設定
 cp ./.xinitrc ~
 cp ./.fvwm2rc ~
 
 # 端末エミュレータのインストールと設定
-sudo pkg install -y mlterm
+sudo pkg install -y -q mlterm
 cp -r ./.mlterm ~
 
 # 入力メソッド・日本語入力システムのインストールと設定
-sudo pkg install -y ja-uim-anthy uim-gtk uim-gtk3 uim-qt5
+sudo pkg install -y -q ja-uim-anthy uim-gtk uim-gtk3 uim-qt5
 cp -r ./.xkb ~
 
 # 入力メソッド・日本語入力システムの初期設定
@@ -56,11 +56,11 @@ mkdir ~/.anthy
 cp -r ./.anthy ~
 
 # アプリのインストール
-sudo pkg install -y firefox
-sudo pkg install -y scrot
-sudo pkg install -y xlockmore
-sudo pkg install -y lupe
-sudo pkg install -y xpad3
+sudo pkg install -y -q firefox
+sudo pkg install -y -q scrot
+sudo pkg install -y -q xlockmore
+sudo pkg install -y -q lupe
+sudo pkg install -y -q xpad3
 
 # xpadの初期設定
 cp -r ./.config ~
@@ -74,26 +74,26 @@ sudo mv /etc/motd.template /etc/motd.template.old
 sudo touch /etc/motd.template
 
 # 8-6.chromium（ウェブブラウザ）を使用したい
-sudo pkg install -y chromium webfonts
+sudo pkg install -y -q chromium webfonts
 
 # 9-1. 9-2.
 cp /usr/local/lib/firefox/browser/chrome/icons/default/default48.png ~/icons/firefox.png
 cp /usr/local/share/icons/hicolor/48x48/apps/chrome.png ~/icons/chrome.png
-sudo pkg install -y xload
-sudo pkg install -y xbatt
+sudo pkg install -y -q xload
+sudo pkg install -y -q xbatt
 
 # conky設定
-sudo pkg install -y conky
+sudo pkg install -y -q conky
 cp ./.conkyrc ~
 
 # 文字コード表
 cp -r ./html ~
 
 # クリップボード
-sudo pkg install -y autocutsel
+sudo pkg install -y -q autocutsel
 
 # 7-3. Windowsやmacとファイル共有したい（smb）
-sudo pkg install -y samba419
+sudo pkg install -y -q samba419
 sudo service samba_server enable
 mkdir ~/share
 sudo cp etc_smb4.conf /usr/local/etc/smb4.conf
