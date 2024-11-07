@@ -102,10 +102,10 @@ else
 endif
 
 # visudoの設定
-set entry = "pcuser ALL=NOPASSWD: /sbin/shutdown"
-grep "$entry" /usr/local/etc/sudoers > /dev/null
+set addstr = "pcuser ALL=NOPASSWD: /sbin/shutdown"
+grep -F -- "$addstr" /usr/local/etc/sudoers > /dev/null
 if ( $status != 0 ) then
-    echo $entry | sudo tee -a /usr/local/etc/sudoers
+    echo "$addstr" | sudo tee -a /usr/local/etc/sudoers
 endif
 
 # mozc
