@@ -193,6 +193,10 @@ key F4 A M Close
 #Key Print A M Exec scrot -b -u -f 'screenshot%Y%m%d%H%M%S.png'
 #Key Print A C Exec scrot -u -f 'screenshot%Y%m%d%H%M%S.png'
 
+# CTRL+ALT+WIN+Pで電源OFF、CTRL+ALT+WIN+Rで再起動
+#Key P A CM4 Exec sudo shutdown -p now
+#Key R A CM4 Exec sudo shutdown -r now
+
 #----------------------------------------------------------------------
 # 6: ウインドウの装飾
 #----------------------------------------------------------------------
