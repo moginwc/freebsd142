@@ -101,6 +101,13 @@ else
     echo 'autoboot_delay="-1"' | sudo tee -a /boot/loader.conf
 endif
 
+# visudoの設定
+set entry = "pcuser ALL=NOPASSWD: /sbin/shutdown"
+grep "$entry" /usr/local/etc/sudoers > /dev/null
+if ( $status != 0 ) then
+    echo $entry | sudo tee -a /usr/local/etc/sudoers
+endif
+
 # mozc
 cp -r ./.uim.d-mozc/customs/custom-mozc.scm ~/uim.d/customs/
 mkdir ~/.mozc
