@@ -109,9 +109,9 @@ if ( $status != 0 ) then
 endif
 
 # mozc
-cp -r ./.uim.d-mozc/customs/custom-mozc.scm ~/uim.d/customs/
+cp -r ./.uim.d-mozc/customs/custom-mozc.scm ~/.uim.d/customs/
 mkdir ~/.mozc
-xxd -r -p ./.mozc/config1.db > ~/.mozc/config1.db
+xxd -r -p ./.mozc/config1.bin > ~/.mozc/config1.db
 
 # 7-3. Windowsやmacとファイル共有したい（smb）
 sudo pkg install -y -q samba419
