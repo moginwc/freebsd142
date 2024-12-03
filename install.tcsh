@@ -2,7 +2,7 @@
 
 # システム起動時に ntpd が起動するよう設定する
 sudo service ntpd enable
-sudo cp ./etc_ntp_conf /etc/ntp.conf
+sudo cp ./etc_ntp.conf /etc/ntp.conf
 
 # 省エネ動作の設定を行う
 sudo service powerd enable
