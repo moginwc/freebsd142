@@ -7,8 +7,8 @@ sudo cp ./etc_ntp.conf /etc/ntp.conf
 # 省エネ動作の設定を行う
 sudo service powerd enable
 
-# グラフィックドライバーのインストール
-sudo pkg install -y -q drm-kmod
+# グラフィックドライバーのインストール(ここではIntel向け設定)
+sudo pkg install -y -q drm-510-kmod
 sudo sysrc kld_list+=i915kms
 sudo pw groupmod video -m pcuser
 
