@@ -114,7 +114,7 @@ AddToMenu Programs    "プログラム"                      Title
 +                     ""                                Nop
 +                     "時計..."                         Exec xclock
 +                     "電卓..."                         Exec xcalc
-+                     "パフォーマンスメータ..."         Exec conky
++                     "パフォーマンスメータ..."         Exec xterm -e top
 +                     ""                                Nop
 +                     "スクリーンショット..."           Exec scrot -s -b $HOME/screenshot%Y%m%d%H%M%S.png
 +                     ""                                Nop
