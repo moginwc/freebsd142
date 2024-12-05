@@ -1,7 +1,7 @@
 #!/bin/tcsh
 
 # 保存先のディレクトリを設定する
-set base_dir="~/Pictures"
+set base_dir="$HOME/Pictures"
 
 # ファイル名が指定されていない場合は終了する
 if ($#argv == 0) then
